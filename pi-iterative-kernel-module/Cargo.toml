@@ -1,0 +1,12 @@
+[package]
+name = "pi-iterative-kernel-module"
+version = "0.1.0"
+authors = ["Paul Freakn Baker <paul.nelson.baker@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+pi-iterator-lib = { path = "../pi-iterator-lib" }
+linux-kernel-module = { git = "https://github.com/fishinabarrel/linux-kernel-module-rust" }
